@@ -1,0 +1,313 @@
+{% load  static %}
+
+<head>
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+.container {
+    margin: 30px auto;
+}
+
+.container .card {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    border-radius: 0px;
+}
+
+body {
+    background: #eee
+}
+
+
+
+.btn.btn-primary {
+    background-color: #ddd;
+    color: black;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.btn.btn-primary:focus {
+    box-shadow: none;
+}
+
+.container .card .img-box {
+    width: 80px;
+    height: 50px;
+}
+
+.container .card img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.container .card .number {
+    font-size: 24px;
+}
+
+.container .card-body .btn.btn-primary .fab.fa-cc-paypal {
+    font-size: 32px;
+    color: #3333f7;
+}
+
+.fab.fa-cc-amex {
+    color: #1c6acf;
+    font-size: 32px;
+}
+
+.fab.fa-cc-mastercard {
+    font-size: 32px;
+    color: red;
+}
+
+.fab.fa-cc-discover {
+    font-size: 32px;
+    color: orange;
+}
+
+.c-green {
+    color: green;
+}
+
+.box {
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+}
+
+.btn.btn-primary.payment {
+    background-color: #1c6acf;
+    color: white;
+    border-radius: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+
+.form__div {
+    height: 50px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.form-control {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    border: 1px solid #DADCE0;
+    border-radius: 0;
+    outline: none;
+    padding: 2px;
+    background: none;
+    z-index: 1;
+    box-shadow: none;
+}
+
+.form__label {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    background-color: #fff;
+    color: #80868B;
+    font-size: 16px;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.form-control:focus+.form__label {
+    top: -8px;
+    left: 12px;
+    color: #1A73E8;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form-control:not(:placeholder-shown).form-control:not(:focus)+.form__label {
+    top: -8px;
+    left: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form-control:focus {
+    border: 1.5px solid #1A73E8;
+    box-shadow: none;
+}
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-lg-0 mb-3">
+                <div class="card p-3">
+                    <div class="img-box">
+                        <img src="https://www.freepnglogos.com/uploads/visa-logo-download-png-21.png" alt="">
+                    </div>
+                    <div class="number">
+                        <label class="fw-bold" for="">**** **** **** 1060</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <small><span class="fw-bold">Expiry date:</span><span>**/**</span></small>
+                        <small><span class="fw-bold">Name:</span><span>****</span></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-3">
+                <div class="card p-3">
+                    <div class="img-box">
+                        <img src="https://www.freepnglogos.com/uploads/mastercard-png/file-mastercard-logo-svg-wikimedia-commons-4.png"
+                            alt="">
+                    </div>
+                    <div class="number">
+                        <label class="fw-bold">**** **** **** 1060</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <small><span class="fw-bold">Expiry date:</span><span>**/**</span></small>
+                        <small><span class="fw-bold">Name:</span><span>****</span></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-3">
+                <div class="card p-3">
+                    <div class="img-box">
+                        <img src="https://www.freepnglogos.com/uploads/discover-png-logo/credit-cards-discover-png-logo-4.png"
+                            alt="">
+                    </div>
+                    <div class="number">
+                        <label class="fw-bold">**** **** **** 1060</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <small><span class="fw-bold">Expiry date:</span><span>**/**</span></small>
+                        <small><span class="fw-bold">Name:</span><span>****</span></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="card p-3">
+                    <p class="mb-0 fw-bold h4">Payment Methods</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <script src="https://www.paypal.com/sdk/js?client-id=Ab3QUCgdjl2B9oAFKWexXsgfnOf0galdy4ji6kqtAUf9ZVxVlzQNepc46LaTYwIEyJv4JfY3AcRIqbVp"></script>
+                <div class="card p-3">
+                    <div class="card-body border p-0">
+                                 <div class="container">
+                                     <div class="row  d-flex justify-content-center">
+                                          <div class="col-lg-4 col-md-6">
+                                            <h5 class="text-danger">we will send your seat number  to your Email.after pay the ticket</h5>
+                                            <br>
+                                            <h5 class="text-dark fs-4">From : Perinthalmanna</h5>
+                                                {% for val in root %}
+                                                    {% if forloop.first %}
+                                                    <h5  class="text-dark fs-4">To : {{val.city_2}}</h5>
+                                                    {% endif %}
+                                              {% endfor %}
+                                            {% for val in root %}
+                                                 {% if forloop.first %}
+                                              <h5 class="text-dark fs-4">Rate : {{val.rate}}Rs </h5>
+                                              {% endif %}
+                                           {% endfor %}
+                                        {% for val in root %}
+                                           {% if forloop.first %}
+                                        <h5 class="text-dark fs-4">Bus : {{val.bus_type}}</h5>
+                                        {% endif %}
+                                     {% endfor %}
+                                     
+                                    <h5 class="mb-0">
+                                </div>
+                            </div>
+                        </div>               
+            <div class="col-12">
+                <div id="paypal-button-container" class="d-flex justify-content-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="text-light mb-2" href="{% url 'confirmation' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+    <script src="{% static "js/main.js" %}"></script>
+</body>
+
+</html>
+    {% block scripts %}
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=Ab3QUCgdjl2B9oAFKWexXsgfnOf0galdy4ji6kqtAUf9ZVxVlzQNepc46LaTYwIEyJv4JfY3AcRIqbVp"></script>
+    
+
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=Ab3QUCgdjl2B9oAFKWexXsgfnOf0galdy4ji6kqtAUf9ZVxVlzQNepc46LaTYwIEyJv4JfY3AcRIqbVp"></script>
+
+    <script>
+        // Render the PayPal button into #paypal-button-container
+        paypal.Buttons({
+
+            // Set up the transaction
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '88.44'
+                        }
+                    }]
+                });
+            },
+
+            // Finalize the transaction
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(orderData) {
+                    // Successful capture! For demo purposes:
+                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                    var transaction = orderData.purchase_units[0].payments.captures[0];
+                    alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+
+                    // Replace the above to show a success message within this page, e.g.
+                    // const element = document.getElementById('paypal-button-container');
+                    // element.innerHTML = '';
+                    // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                    // Or go to another URL:  actions.redirect('thank_you.html');
+                });
+            }
+
+
+        }).render('#paypal-button-container');
+    </script>
+
+    {% endblock scripts %}
+    <script src="{% static "js/checkout.js" %}">
